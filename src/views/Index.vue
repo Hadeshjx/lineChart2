@@ -7,7 +7,7 @@
                     <el-button @click="connectHandle" type="primary" size="small" class="connect">建立连接
                     </el-button>
                     <el-button type="primary" size="small" @click="$router.push({path:'/check'})">历史故障查询</el-button>
-                    <el-button type="primary" size="small">故障存储</el-button>
+                    <el-button type="primary" size="small" @click="saveError">故障存储</el-button>
                 </div>
             </el-card>
             <el-card class="select-card">
@@ -244,6 +244,11 @@
             },
             subMessageChange(){
                 this.tips = this.subTips
+            },
+            saveError(){
+                this.$alert('已成功将当前故障信息存入故障案例库中!', {
+                    confirmButtonText: '确定'
+                });
             }
         },
         beforeDestroy() {
