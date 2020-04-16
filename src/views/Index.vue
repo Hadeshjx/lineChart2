@@ -6,7 +6,7 @@
                 <div class="btn-group">
                     <el-button @click="connectHandle" type="primary" size="small" class="connect">建立连接
                     </el-button>
-                    <el-button type="primary" size="small">历史故障查询</el-button>
+                    <el-button type="primary" size="small" @click="$router.push({path:'/check'})">历史故障查询</el-button>
                     <el-button type="primary" size="small">故障存储</el-button>
                 </div>
             </el-card>
