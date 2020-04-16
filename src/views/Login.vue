@@ -45,7 +45,7 @@
                 let {userName,passWord}=this.formData
                 if(userName=='admin'&&passWord=='123456'){
                     localStorage.setItem('userInfo',userName)
-                    this.$router.push({name:'Layout'})
+                    this.$router.push({ path: '/layout' })
                 }
             }
         }
