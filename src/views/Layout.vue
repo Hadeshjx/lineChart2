@@ -6,7 +6,7 @@
                     <el-page-header @back="goBack" content="ZPW-2000A轨道电路故障诊断系统"/>
                 </el-col>
                 <el-col :span="8" class="user-info">
-                    <el-avatar :size="40" :src="circleUrl"></el-avatar>
+                    <el-avatar :size="50"/>
                     <span class="userName">{{userName}}</span>
                 </el-col>
             </el-row>
@@ -26,12 +26,6 @@
 <script>
     export default {
         name: "Layout",
-
-        data() {
-            return {
-                circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
-            }
-        },
 
         computed: {
             bodyH() {
@@ -77,5 +71,10 @@
 
     .user-info > * {
         vertical-align: middle;
+    }
+    .el-avatar {
+        background: url("../assets/pic.png");
+        background-size: contain;
+        border: 1px solid #C0C4CC;
     }
 </style>
