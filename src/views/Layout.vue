@@ -73,7 +73,7 @@
         vertical-align: middle;
     }
     .el-avatar {
-        background: url("../assets/pic.png");
+        background: url("../assets/pic.jpg");
         background-size: contain;
         border: 1px solid #C0C4CC;
     }
